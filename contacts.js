@@ -5,8 +5,7 @@ const nanoid = require("nanoid");
 require("colors");
 
 const contactsPath = path.join(__dirname, './db/contacts.json');
-const newContactsPath = path.join(__dirname, './db/newContacts.json');
-
+  
 const fetchContacts = async() => {
 const contacts = await fs.readFile(contactsPath);
  return JSON.parse(contacts)
